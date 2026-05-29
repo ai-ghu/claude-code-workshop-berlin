@@ -32,6 +32,11 @@ You should have received a setup email with the account checklist (GitHub, Claud
    ```
 6. Start chatting. Try: *"Change the headline to say 'Hi, I'm [your name]'"*
 
-## Where to go after the workshop
+## Reference docs
 
-See [docs/04-next-steps.md](./docs/04-next-steps.md) for custom slash commands, MCP servers, skills, and ideas for extending your site.
+Whether during or after the workshop, these are the references to keep on hand:
+
+- [docs/01-terminal-basics.md](./docs/01-terminal-basics.md) — the dozen commands you actually need (`pwd`, `cd`, `mkdir`, etc.)
+- [docs/02-claude-commands.md](./docs/02-claude-commands.md) — every Claude Code slash command, keyboard shortcut, and launch mode
+- [docs/03-prompts.md](./docs/03-prompts.md) — a library of useful prompts, organized by what you're trying to do
+- [docs/04-next-steps.md](./docs/04-next-steps.md) — going further: custom slash commands, MCP servers, skills, extending your site
