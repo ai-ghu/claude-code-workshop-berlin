@@ -34,35 +34,32 @@ You should have received a setup email with the account checklist (GitHub, Claud
 
 ## Deploying to Vercel
 
-This repo includes a `vercel.json` at the root that pre-configures the deploy:
+Two ways, both quick:
 
-- **Framework** — auto-selected as Next.js (no dropdown to pick)
-- **Default template** — `templates/portfolio`
+### Via the Vercel CLI (recommended — no setup)
 
-### To deploy
+From inside your template directory:
 
-1. Go to [vercel.com/new](https://vercel.com/new) and import your fork
-2. Click **Deploy** — no settings to change
-3. ~60 seconds later, your portfolio site is live
-
-### Deploying the landing template instead
-
-Open `vercel.json` in your project (or ask Claude *"open vercel.json"*) and replace both occurrences of `templates/portfolio` with `templates/landing`:
-
-```json
-{
-  "framework": "nextjs",
-  "buildCommand": "cd templates/landing && npm install && npm run build",
-  "outputDirectory": "templates/landing/.next",
-  "installCommand": "echo 'Install runs inside the template directory during build.'"
-}
+```bash
+cd templates/portfolio   # or templates/landing
+vercel login             # one-time
+vercel --prod
 ```
 
-Commit and push. Vercel auto-redeploys with the new template.
+A URL appears. Your site is live.
 
-Easier route: just ask Claude:
+### Via the Vercel dashboard (GitHub integration)
 
-> *"Update vercel.json so it deploys the landing template instead of portfolio."*
+If you connect your GitHub fork to Vercel, you'll need one extra setting:
+
+1. [vercel.com/new](https://vercel.com/new) → import your fork
+2. **Root Directory** → click Edit → set to `templates/portfolio` (or `templates/landing`)
+3. Framework Preset auto-detects as Next.js once the Root Directory is set
+4. Click Deploy
+
+> **Why the Root Directory step?** The website code lives inside `templates/portfolio/` (or `templates/landing/`), not at the repo root. Vercel needs to know where to look.
+
+If you see a 404 or a "no Next.js version detected" error after deploy, the Root Directory probably wasn't set. Go to your project's **Settings → Build & Development Settings**, set it, save, then **Redeploy** from the Deployments tab.
 
 ## Reference docs
 

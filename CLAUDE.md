@@ -32,17 +32,23 @@ The user is **non-technical**. They have not written code before today. Treat th
 
 ## Deploying to Vercel
 
-A `vercel.json` at the repo root pre-configures the deploy. Default target is `templates/portfolio`.
+Two ways to deploy. Both require the user to be inside (or to point Vercel at) the chosen template directory.
 
-**If the user wants to deploy the landing template** instead of the portfolio:
+**CLI path (preferred — zero config):**
 
-- Open `vercel.json`
-- Replace both occurrences of `templates/portfolio` with `templates/landing`
-- Save the file
-- Commit and push (or ask Claude to: *"commit this change and push"*)
-- Vercel auto-redeploys
+Run from inside the template:
 
-That's the only edit needed. **Don't touch the `framework`, `installCommand`, or other fields** — they work for both templates.
+```bash
+cd templates/portfolio   # or templates/landing
+vercel login             # first time
+vercel --prod
+```
+
+**GitHub-integration path:**
+
+If the user imports the fork via vercel.com, they must set **Root Directory** to `templates/portfolio` (or `templates/landing`) in the Vercel project settings. This is a one-time dashboard step — there is no way to set Root Directory via `vercel.json`. Without it, Vercel scans the repo root, finds no Next.js, and returns "No Next.js version detected" / 404.
+
+Don't try to work around this with custom `buildCommand`, `framework`, or root-level `package.json` hacks — they cause weirder failures. The dashboard step is the clean answer.
 
 ## Things to flag
 
