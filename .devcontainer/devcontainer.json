@@ -1,10 +1,14 @@
 {
   "name": "Claude Code Workshop",
-  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
   "features": {
     "ghcr.io/devcontainers/features/github-cli:1": {}
   },
-  "postCreateCommand": "npm install -g @anthropic-ai/claude-code vercel",
+  "updateContentCommand": "npm ci --prefix templates/portfolio && npm ci --prefix templates/landing",
+  "waitFor": "updateContentCommand",
   "forwardPorts": [3000],
   "portsAttributes": {
     "3000": {
