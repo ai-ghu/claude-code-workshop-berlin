@@ -4,12 +4,19 @@ Welcome! In the next 2 hours you'll build and deploy your own website using Clau
 
 ## What you'll build
 
-Pick one of these starter templates:
+A clean, content-driven **personal portfolio** (about, projects, contact), built with Next.js + Tailwind. By the end of the workshop, your site will be live on the internet at a Vercel URL you can share.
 
-- **`templates/portfolio/`** — personal portfolio (about, projects, contact)
-- **`templates/landing/`** — small-business landing page (hero, services, contact)
+Content and layout are kept separate, so most edits happen in one file: `content.ts`.
 
-By the end of the workshop, your site will be live on the internet at a Vercel URL you can share.
+```
+content.ts              ← all editable text lives here
+components/             ← one file per page section (Hero, About, Projects, …)
+app/
+  page.tsx              ← composes the sections in order
+  layout.tsx            ← HTML wrapper, page title from content.ts
+  globals.css           ← base styles
+tailwind.config.ts      ← colors and fonts
+```
 
 ## Before the workshop
 
@@ -19,9 +26,8 @@ You should have received a setup email with the account checklist (GitHub, Claud
 
 1. **Fork this repo** to your own GitHub account (top-right "Fork" button).
 2. **Open in Codespaces**: on your fork, click the green "Code" button → "Codespaces" tab → "Create codespace on main". Wait ~60 seconds for the environment to boot.
-3. **Pick your template** in the Codespace terminal:
+3. **Start the preview** in the Codespace terminal:
    ```bash
-   cd templates/portfolio   # or: cd templates/landing
    npm install
    npm run dev
    ```
@@ -32,34 +38,35 @@ You should have received a setup email with the account checklist (GitHub, Claud
    ```
 6. Start chatting. Try: *"Change the headline to say 'Hi, I'm [your name]'"*
 
+## What to ask Claude
+
+Common text edits — Claude will edit `content.ts`:
+
+- *"Change my name to Sara Patel."*
+- *"Update the headline to say I'm looking for senior roles."*
+- *"Add a fourth project called 'Berlin Coffee Map'."*
+- *"Remove the Skills section entirely."*
+- *"Update my email to sara@example.com."*
+
+Layout / design tweaks — Claude will edit `components/` or `tailwind.config.ts`:
+
+- *"Make the headline bigger and use a serif font for it."*
+- *"Switch the accent color from blue to a deep orange."*
+- *"Use a dark background everywhere."*
+- *"Show projects as a grid instead of a list."*
+
 ## Deploying to Vercel
 
-Two ways, both quick:
-
-### Via the Vercel CLI (recommended — no setup)
-
-From inside your template directory:
+From the Codespace terminal:
 
 ```bash
-cd templates/portfolio   # or templates/landing
 vercel login             # one-time
 vercel --prod
 ```
 
-A URL appears. Your site is live.
+Follow the prompts — accept the defaults. A URL like `your-portfolio.vercel.app` appears, and your site is live.
 
-### Via the Vercel dashboard (GitHub integration)
-
-If you connect your GitHub fork to Vercel, you'll need one extra setting:
-
-1. [vercel.com/new](https://vercel.com/new) → import your fork
-2. **Root Directory** → click Edit → set to `templates/portfolio` (or `templates/landing`)
-3. Framework Preset auto-detects as Next.js once the Root Directory is set
-4. Click Deploy
-
-> **Why the Root Directory step?** The website code lives inside `templates/portfolio/` (or `templates/landing/`), not at the repo root. Vercel needs to know where to look.
-
-If you see a 404 or a "no Next.js version detected" error after deploy, the Root Directory probably wasn't set. Go to your project's **Settings → Build & Development Settings**, set it, save, then **Redeploy** from the Deployments tab.
+> **Prefer the Vercel dashboard?** Go to [vercel.com/new](https://vercel.com/new) and import your fork. Because the site now lives at the repo root, Vercel auto-detects Next.js — no extra settings needed. Just click Deploy.
 
 ## Reference docs
 

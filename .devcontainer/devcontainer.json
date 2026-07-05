@@ -4,7 +4,7 @@
   "features": {
     "ghcr.io/devcontainers/features/github-cli:1": {}
   },
-  "updateContentCommand": "npm ci --prefix templates/portfolio && npm ci --prefix templates/landing",
+  "updateContentCommand": "npm ci",
   "waitFor": "updateContentCommand",
   "mounts": [
     "source=claude-code-config,target=/home/node/.claude,type=volume"

@@ -10,10 +10,8 @@ on:
     # Only rebuild when something that affects the image actually changes.
     paths:
       - ".devcontainer/**"
-      - "templates/portfolio/package.json"
-      - "templates/portfolio/package-lock.json"
-      - "templates/landing/package.json"
-      - "templates/landing/package-lock.json"
+      - "package.json"
+      - "package-lock.json"
       - ".github/workflows/devcontainer-image.yml"
   workflow_dispatch: {} # lets you trigger a rebuild by hand from the Actions tab
 

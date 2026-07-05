@@ -28,7 +28,7 @@ pwd
 Output looks like:
 
 ```
-/workspaces/claude-code-workshop-berlin/templates/portfolio
+/workspaces/claude-code-workshop-berlin
 ```
 
 > Think of it as *"print working directory"*.
@@ -54,7 +54,7 @@ Changes your current folder. The name stands for *"change directory"*.
 Go into a sub-folder:
 
 ```bash
-cd templates/portfolio
+cd components
 ```
 
 Go back up one level:
@@ -213,10 +213,10 @@ You'll get a URL like `your-site.vercel.app`.
 Start typing a file or folder name, press **`Tab`**, and the terminal fills in the rest. Save yourself typos.
 
 ```bash
-cd temp[Tab]
+cd comp[Tab]
 ```
 
-→ becomes `cd templates/`
+→ becomes `cd components/`
 
 ### Up arrow / down arrow
 
