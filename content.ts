@@ -5,11 +5,11 @@
 // ────────────────────────────────────────────────────────────────
 
 export const hero = {
-  name: "Anna Schneider",
-  role: "Product Designer",
+  name: "X",
+  role: "Sales Professional",
   location: "Berlin, Germany",
   headline:
-    "I help early-stage teams turn fuzzy ideas into shipping products. Currently designing checkout flows at a fintech startup.",
+    "I turn cold conversations into long-term partnerships. Currently helping mid-market teams close deals they didn't think were possible.",
   ctaPrimary: { label: "See my work", href: "#projects" },
   ctaSecondary: { label: "Get in touch", href: "#contact" },
 };
@@ -17,9 +17,9 @@ export const hero = {
 export const about = {
   heading: "About",
   paragraphs: [
-    "I'm a product designer with seven years of experience across fintech, e-commerce, and developer tools. I care about the unglamorous parts of design — error states, edge cases, and the slow trust-building between a product and its users.",
-    "Before design, I studied philosophy in Munich. It turns out a lot of design is just disciplined thinking about what people actually need versus what they say they want.",
-    "Outside work I climb (poorly), read (constantly), and run a small Sunday breakfast club in Neukölln.",
+    "I've spent my career in sales because I like the honesty of it — you can't fake a number at the end of the quarter, and I've always found that clarity motivating rather than stressful.",
+    "My approach is less 'pitch' and more 'diagnosis': understand what a prospect actually needs before I say a word about what I'm selling. That's led to longer relationships, better renewals, and a pipeline that doesn't require constant refilling.",
+    "Outside work I'm usually negotiating something far lower-stakes — dinner plans, weekend trips, or which podcast we're listening to on a run.",
   ],
 };
 
@@ -27,52 +27,52 @@ export const experience = {
   heading: "Experience",
   roles: [
     {
-      title: "Senior Product Designer",
-      company: "Tide",
+      title: "Senior Account Executive",
+      company: "Alpha",
       period: "2023 — Present",
       summary:
-        "Leading checkout and onboarding redesign for the business banking app. Cut signup drop-off by 34% in the first quarter after launch.",
+        "Owned a full-cycle sales pipeline from prospecting to close for mid-market accounts. Exceeded quota every quarter, growing the book of business by 40% year over year.",
     },
     {
-      title: "Product Designer",
-      company: "GitLab",
+      title: "Account Executive",
+      company: "Beta",
       period: "2020 — 2023",
       summary:
-        "Owned the merge request review experience. Shipped inline code review, suggested changes UX, and the new diff renderer.",
+        "Built and managed a portfolio of key accounts, turning first-time buyers into repeat customers through consultative selling and relentless follow-through.",
     },
     {
-      title: "Designer",
-      company: "Freelance",
-      period: "2017 — 2020",
+      title: "Sales Development Representative",
+      company: "Gamma",
+      period: "2018 — 2020",
       summary:
-        "Worked with 14 early-stage startups across Berlin and Tel Aviv on brand, web, and product design.",
+        "Started at the top of the funnel, booking qualified meetings and learning the fundamentals that still shape how I sell today.",
     },
   ],
 };
 
 export const projects = {
-  heading: "Selected work",
+  heading: "Selected wins",
   items: [
     {
-      title: "Tide Checkout Redesign",
+      title: "Landing the anchor account",
       year: "2024",
       summary:
-        "Reframed the onboarding flow around clarity over speed. Three rounds of usability testing, six prototypes, one launch — 34% improvement in completion.",
+        "Turned a lukewarm inbound lead into the largest contract in company history through six months of patient relationship-building and a proposal tailored to their exact roadmap.",
       link: { label: "Case study", href: "#" },
     },
     {
-      title: "GitLab Inline Code Review",
-      year: "2022",
+      title: "Rebuilding a churned relationship",
+      year: "2023",
       summary:
-        "Designed the inline review pattern now used by 30+ million developers. Started as a hack-week prototype, became a flagship feature.",
+        "Re-engaged a customer who'd left for a competitor, addressed the root cause head-on, and won them back with a renewal 20% larger than their original contract.",
       link: { label: "Read the writeup", href: "#" },
     },
     {
-      title: "Berlin Coffee Map",
-      year: "2023",
+      title: "Territory turnaround",
+      year: "2022",
       summary:
-        "A side project mapping independent coffee roasters in Berlin. Built with React + Mapbox. Used by ~2k people a week.",
-      link: { label: "View live", href: "#" },
+        "Inherited an underperforming territory and rebuilt the pipeline from scratch — 3x'd quarterly bookings within two quarters through disciplined prospecting.",
+      link: { label: "View details", href: "#" },
     },
   ],
 };
@@ -81,16 +81,16 @@ export const skills = {
   heading: "What I work with",
   groups: [
     {
-      label: "Design",
-      items: ["Product strategy", "Interaction design", "Prototyping", "Usability testing", "Design systems"],
+      label: "Sales",
+      items: ["Consultative selling", "Pipeline management", "Negotiation", "Account planning", "Forecasting"],
     },
     {
       label: "Tools",
-      items: ["Figma", "Linear", "Notion", "Framer", "FigJam"],
+      items: ["Salesforce", "HubSpot", "Outreach", "LinkedIn Sales Navigator", "Gong"],
     },
     {
-      label: "Code",
-      items: ["HTML / CSS", "React (basics)", "Git"],
+      label: "Strengths",
+      items: ["Relationship building", "Objection handling", "Storytelling", "Cross-functional collaboration"],
     },
   ],
 };
@@ -100,15 +100,15 @@ export const testimonials = {
   quotes: [
     {
       text:
-        "Anna is rare. She holds the long-term product vision and the pixel-level craft in the same head, and shifts between them without losing either.",
-      author: "Lukas Weber",
-      role: "Head of Product, Tide",
+        "X has a rare gift for making prospects feel understood rather than sold to. That's why the deals stick and the renewals happen without drama.",
+      author: "Jordan Lee",
+      role: "VP of Sales, Alpha",
     },
     {
       text:
-        "Working with Anna recalibrated how our whole team thinks about review. She has an instinct for what's actually friction versus what just feels like friction.",
-      author: "Sara Patel",
-      role: "Engineering Manager, GitLab",
+        "Working with X changed how I think about our sales process. They ask better questions than anyone else on the team, and it shows in the numbers.",
+      author: "Priya Nair",
+      role: "Customer Success Lead, Alpha",
     },
   ],
 };
@@ -116,16 +116,15 @@ export const testimonials = {
 export const contact = {
   heading: "Get in touch",
   body:
-    "Open to product design roles, collaborations, and the occasional coffee. Berlin or remote.",
-  email: "anna@example.com",
+    "Open to new sales roles, partnerships, and conversations about what makes a good pipeline. Berlin or remote.",
+  email: "x@example.com",
   socials: [
     { label: "LinkedIn", href: "https://linkedin.com/in/yourname" },
     { label: "Twitter / X", href: "https://twitter.com/yourname" },
-    { label: "Read.cv", href: "https://read.cv/yourname" },
   ],
 };
 
 export const meta = {
-  title: "Anna Schneider — Product Designer",
-  description: "Berlin-based product designer. Currently at Tide.",
+  title: "X — Sales Professional",
+  description: "Berlin-based sales professional building long-term partnerships, one deal at a time.",
 };
