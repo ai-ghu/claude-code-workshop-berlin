@@ -17,9 +17,7 @@ export const hero = {
 export const about = {
   heading: "About",
   paragraphs: [
-    "I've spent my career in sales because I like the honesty of it — you can't fake a number at the end of the quarter, and I've always found that clarity motivating rather than stressful.",
-    "My approach is less 'pitch' and more 'diagnosis': understand what a prospect actually needs before I say a word about what I'm selling. That's led to longer relationships, better renewals, and a pipeline that doesn't require constant refilling.",
-    "Outside work I'm usually negotiating something far lower-stakes — dinner plans, weekend trips, or which podcast we're listening to on a run.",
+    "I'm a sales professional who turns cold conversations into long-term partnerships by diagnosing what a prospect actually needs before ever making a pitch.",
   ],
 };
 
